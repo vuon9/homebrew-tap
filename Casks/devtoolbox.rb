@@ -7,5 +7,11 @@ cask "devtoolbox" do
   desc "Essential dev tools for daily tasks"
   homepage "https://github.com/vuon9/devtoolbox"
 
+  livecheck do
+    skip "Using prerelease builds until the first stable SemVer release is cut"
+  end
+
+  depends_on macos: :ventura
+
   app "DevToolbox.app"
 end
