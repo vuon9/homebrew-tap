@@ -11,8 +11,8 @@ cask "devtoolbox-rc" do
     skip "Short-lived cask for testing a specific prerelease"
   end
 
-  depends_on macos: :ventura
   conflicts_with cask: "devtoolbox"
+  depends_on macos: :ventura
 
   app "DevToolbox.app"
 end
